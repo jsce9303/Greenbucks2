@@ -14,64 +14,170 @@
       margin: 0 auto; padding: 20px 5%;
 
       text-align: center; /*글자 중앙 정렬*/
-      background-color: #f6f5ef;
+      background-color: #1e3932;
     }
       header {
+        color: #ffffff;
         width: 70%;
         margin: 20px auto;
       }
       header > h1 { margin-bottom: 20px;}
-      header > p { text-align: justify;}
+      header > p { text-align: center;}
 
       section {
         width: 100%;
         box-sizing: border-box;
         margin: 0 auto; padding: 25px;
       }
+      #logo {
+        height: 20px;
+      }
+      #logo > img {
+        width: 10%;
+        height: 20px;
+        transform: translate(0%, 0%);
+        float:inline-start;
+      }
+      em {
+        color: green;
+        font-size: 14px;
+        font-weight:bold;
+        float:inline-start;
+      }
+      img {
+        max-width: 200px;
+        max-height: 220px;
+        border-radius: 15px;
+      }
+      h4 {
+        font-size: 13px;
+        text-align: center;
+      }
+
         .card {
           width: 200px; height: 350px;
           margin: 10px;
 
           float: left;
-          background-color: white;
+          background-color: #f6f5ef;
+          border-radius: 15px;
+          text-align: left;
+          padding: 5px;
+          font-size: 12px;
+        }
+        .card > figcaption > ul {
+          padding-left: 45px;
         }
 
       footer{
+        color: #f6f5ef;
         font-size: 11px;
       }
+      @media (min-width: 1280px) {
+        section { width: 1000px; height: 790px; }
+      } 
 
-    @media (min-width: 1030px) {
-    section { width: 930px; height: 790px; }
-    } 
+      @media (max-width: 1279px) {
+        section { width: 810px; height: 1260px; }
+      }
 
-    @media (max-width: 1029px) {
-    section { width: 710px; height: 1160px; }
-    }
+      @media (max-width: 768px){
+        section { width: 590px; height: 1580px; }
+      }
 
-    @media (max-width: 809px){
-    section { width: 490px; height: 1530px; }
-    }
-
-    @media (max-width: 589px) {
-    section { width: 270px; height: 3060px; }
-    }
+      @media (max-width: 480px) {
+        section { width: 270px; height: 3060px; }
+      }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>title</h1>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <h1>Greenbucks</h1>
+      <p>F I N D&nbsp&nbsp&nbsp&nbspY O U R&nbsp&nbsp&nbsp&nbspT A S T E </p>
     </header>
     <section>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="card">
+        <img src="img/caramel_macchiato.jpg">
+        <figcaption>
+          <h4>A caramel macchiato</h4></br>
+          <ul>
+            <li>2 pump vanilla syrup</li>
+            <li>2 espresso shot</li>
+            <li>1 steamed milk</li>
+            <li>some caramel source</li>
+            <li>some whipped cream</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/cafe_americano.jpg">
+        <figcaption>
+          <h4>An americano</h4></br>
+          <ul>
+            <li>2 espresso shot</li>
+            <li>some water</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/cafe_latte.jpg">
+        <figcaption>
+          <h4>A cafe latte</h4></br>
+          <ul>
+            <li>2 espresso shot</li>
+            <li>1 steamed milk</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/cafe_mocha.jpg">
+        <figcaption>
+          <h4>A cafe mocha</h4></br>
+          <ul>
+            <li>2 pump chocolate syrup</li>
+            <li>2 espresso shot</li>
+            <li>1 steamed milk</li>
+            <li>some chocolate source</li>
+            <li>some whipped cream</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/dolce_latte.jpg">
+        <figcaption>
+          <h4>A dolce latte</h4></br>
+          <ul>
+            <li>2 pump Condensed milk</li>
+            <li>2 espresso shot</li>
+            <li>1 steamed milk</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/cappuccino.jpg">
+        <figcaption>
+          <h4>A cappuccino</h4></br>
+          <ul>
+            <li>2 espresso shot</li>
+            <li>1 steamed milk</li>
+            <li>some cinnamon powder</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/coldbrew_onlyice.jpg">
+        <figcaption>
+          <h4>A coldbrew</h4></br>
+          <ul>
+            <li>2 cold brewd shot</li>
+            <li>some water</li>
+            <li>some ice</li>
+          </ul>
+        </figcaption>
+      </div>
+      <div class="card"><img src="img/espresso_onlyhot.jpg">
+        <figcaption>
+          <h4>An espresso</h4></br>
+          <ul>
+            <li>1 espresso shot</li>
+          </ul>
+        </figcaption>
+      </div>
     </section>
     <footer>
       Copyright 2022. Kkh. All rights reserved.
