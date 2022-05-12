@@ -5,7 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>반응형 이미지 카드 </title>
   <style>
+    *{ margin: 0; padding: 0;} /* 중앙정렬 */
     
+    .container { /*전체 영역*/
+      width: 85%;
+      min-width: 370px; max-width: 1000px;
+
+      margin: 0 auto; padding: 20px 5%;
+
+      text-align: center; /*글자 중앙 정렬*/
+      background-color: #f6f5ef;
+    }
+      header {
+        width: 70%;
+        margin: 20px auto;
+      }
+      header > h1 { margin-bottom: 20px;}
+      header > p { text-align: justify;}
+
+      section {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto; padding: 25px;
+      }
+        .card {
+          width: 200px; height: 350px;
+          margin: 10px;
+
+          float: left;
+          background-color: white;
+        }
+
+      footer{
+        font-size: 11px;
+      }
   </style>
 </head>
 <body>
